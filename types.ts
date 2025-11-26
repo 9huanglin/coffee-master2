@@ -41,19 +41,3 @@ export interface CoffeeRecipe {
   difficulty: Difficulty;
   category: 'classic' | 'milk' | 'specialty'; 
 }
-
-// Keeping these for potential future use
-export enum AspectRatio {
-  SQUARE = '1:1',
-  PORTRAIT_3_4 = '3:4',
-  LANDSCAPE_4_3 = '4:3',
-  PORTRAIT_9_16 = '9:16',
-  LANDSCAPE_16_9 = '16:9',
-}
-
-export interface GeneratedImage {
-  url: string;
-  prompt: string;
-  aspectRatio: AspectRatio;
-  timestamp: number;
-}
